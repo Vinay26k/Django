@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<!-- <html>
+  <head>
+    <meta charset="utf-8">
+    <title>Home Page</title>
+  </head>
+  <body> -->
+  {% extends "BasicApp/base.html" %}
+  {% block body_block %}
+    <h1>Welcome to Index!</h1>
+    <h2>Example of template inheritance</h2>
+    <h3>
+      <!-- {{ text | upper }}<br> -->
+      {{ text | cut:'hel' }}<br>
+    {{ number | add:"10" }}</h3>
+  {% endblock %}
+  <!-- </body>
+</html> -->

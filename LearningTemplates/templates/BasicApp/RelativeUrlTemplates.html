@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<!-- <html>
+  <head>
+    <meta charset="utf-8">
+    <title>Relative Url Templates</title>
+  </head>
+  <body> -->
+  {% extends "BasicApp/base.html" %}
+  {% block body_block %}
+    <h1>Welcome to Relative Url templates</h1>
+    <a href="{% url 'BasicApp:other' %}"><em>The other page!</em></a>
+    <br>
+    <a href="{% url 'admin:index' %}"><em>Admin Page!</em></a><br>
+    <a href="{% url 'index' %}"><em>Index Page!</em></a>
+    <h2>Example of template inheritance</h2>
+  {% endblock %}
+
+  <!-- </body>
+</html> -->
