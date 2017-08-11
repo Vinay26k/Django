@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>First App</title>
+    <link rel="stylesheet" href="{% static "css/myStyle.css" %}"/>
+  </head>
+  <body>
+    <h1>Hello this is index.html</h1>
+    <h2>Django Level Two</h2>
+    {{ insert_me }}
+    <h2>Here are records: </h2>
+    <div class="djangotwo">
+      {% if access_records %}
+      <table>
+        <thead>
+          <th>Site Name</th>
+          <th>Date Accessed</th>
+        </thead>
+        {% for acc in access_records%}
+        <tr>
+          <td>{{ acc.name }}</td>
+          <td>{{ acc.date }}</td>
+        </tr>
+        {% endfor %}
+      </table>
+      {% else %}
+        <p>No AccessRecords found :(</p>
+      {% endif %}
+    </div>
+    <!--img src="{% static "images/proPic.jpg" %}" alt="Profile Pic"-->
+  </body>
+</html>
