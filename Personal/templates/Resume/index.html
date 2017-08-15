@@ -1,0 +1,307 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+<head>
+		<title>Resume Website Template | Home :: w3layouts</title>
+		<script src='//www.google.com/recaptcha/api.js'></script>
+		<script src="{% static "js/jquery.min.js" %}"> </script>
+		<link href="{% static "css/bootstrap.css" %}" rel='stylesheet' type='text/css' />
+		<link href="{% static "css/style.css" %}" rel="stylesheet" type="text/css" media="all" />
+		<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		<!---- start-smoth-scrolling---->
+			<script type="text/javascript" src="{% static "js/move-top.js" %}"></script>
+			<script type="text/javascript" src="{% static "js/easing.js" %}"></script>
+			<script type="text/javascript">
+				jQuery(document).ready(function($) {
+					$(".scroll").click(function(event){
+						event.preventDefault();
+						$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+					});
+				});
+			</script>
+		<!---- start-smoth-scrolling---->
+</head>
+<body>
+<!------headerbg starts--------->
+ <div id="top-top" class="headerbg">
+	 <!------header starts--------->
+	   <div class="header">
+		 <!------container starts--------->
+			  <div class="container">
+				   <div class="logo">
+						<a href="#">Resume</a>
+				   </div>
+				  <!------Navigation starts--------->
+				  <div class="nav">
+					 <ul>
+						 <li><a class="scroll" href="#about">ABOUT</a></li>
+						 <li><a class="scroll" href="#skills">SKILLS</a></li>
+						 <li><a class="scroll" href="#port">PROJECTS</a></li>
+						 <li><a class="scroll" href="#contact">CONTACT</a></li>
+						 <li><a href="{% static "download/VinayResume.pdf" %}">DOWNLOAD</a></li>
+					 </ul>
+				 </div>
+				  <!------Navigation ends-------->
+					<div class="clear"></div>
+			  </div>
+		 <!------container ends--------->
+	   </div>
+	 <!------header ends--------->
+	 <!------Banner starts--------->
+	   <div class="banner">
+	      <div class="container">
+		     <div class="banner-info">
+			      <div class="bannerlogo">
+					  <img src="{% static "images/diamond.png" %}">
+			      </div>
+			      <div class="bannerhead">
+				      <h2><span>Vinay Narayana</span></h2>
+				      <h3>Full Stack Developer</h3>
+							<!-- 💖 🌌 💻  ☕ -->
+				      <h4><p>In relationship  with programming world. <br>Tech Enthusiast. <br> ℭomputer Science Student<br> ℭoffee to ℭode ℭonverter</p></h4>
+					  <a class="downarrow scroll" href="#about"><span> </span></a>
+			      </div>
+			 </div>
+			 <div class="clear"></div>
+		  </div>
+	  </div>
+	  <!------Banner ends-------->
+ </div>
+ <!------Headerbg ends-------->
+ <!------Content starts--------->
+ <div class="content">
+	 <!------About starts--------->
+	   <div id="about" class="about">
+		 <div class="container">
+			   <div class="header-section text-center">
+				  <h2><span> </span>ABOUT<span> </span></h2>
+				  </div>
+				 <span><p>Indian, born in Andhra. <br>Computer geek.<br>
+					 <b><em>Programming Languages : </em></b>
+					 <em>Python, C++, HTML CSS JS, Java, MySql</em>
+				 </p></span>
+				 <h3><em>Education</em></h3>
+			  <div class="years">
+				<h4><b>2012</b></h4>
+				 <span><h4>Ravindra Bharathi High School</h4></span>
+				 <p><h5>Achievements</h5><i>Debate Competition Winner.<br>Science Fair Runner up.<br>Spell Bee Competition District Qualified.<br>CR of the class.</i></p>
+			  </div>
+
+			  <div class="years">
+				 <h4><b>2014</b></h4>
+				 <span><h4>Sri Chaitanya Junior College </h4></span>
+				 <!-- <p><h3>Achievements</h3><i>Held responsibility as CR for the class.<br></i></p> -->
+			  </div>
+
+			   <div class="years">
+				 <h4><b>Present</b></h4>
+				 <span><h4>Lovely Professional University</h4></span>
+				 <div class="labs">
+					 <p><h3>Achievements</h3><i>Certified with HackTrack Ethical Hacking Level one.<br>Earned Web Developement Badge from Microsoft <a href="https://mva.microsoft.com/RewardEvidence.aspx/?key=6vgMP1NO1J9Y2NHAIyQ7tQ2">here</a>
+					 <br>Certified in UWP, ASP.net, Azure technologies - Beginner Level</i></p>
+			     </div>
+			  </div>
+				 <a class="arrow scroll" href="#skills"><span> </span></a>
+		  </div>
+	  </div>
+	 <!------About Ends--------->
+
+	<!------SKILLS Starts--------->
+	  <div id="skills" class="skills">
+	  <div class="container">
+	     <div class="skills-grids">
+			  <div class="skill-section text-center">
+				  <h2><span> </span>SKILLS<span> </span></h2>
+			  </div>
+					  <div class="services_grids">
+						  <div id="canvas">
+								<div class="skill-grids text-center">
+										<div class="col-md-3">
+											<div class="skill-grid">
+												<div class="circle" id="circles-1"></div>
+												 <h3>Python</h3>
+											 </div>
+										</div>
+										<div class="col-md-3">
+											<div class="skill-grid">
+												<div class="circle" id="circles-2"></div>
+												 <h3>Html</h3>
+											 </div>
+										</div>
+										<div class="col-md-3">
+											<div class="skill-grid">
+												<div class="circle" id="circles-3"></div>
+												 <h3>css</h3>
+											 </div>
+										</div>
+										<div class="col-md-3">
+											<div class="skill-grid">
+												<div class="circle" id="circles-4"></div>
+												 <h3>JS</h3>
+											 </div>
+										</div>
+										<div class="col-md-3">
+											<div class="skill-grid">
+												<div class="circle" id="circles-5"></div>
+												 <h3>Django</h3>
+											 </div>
+										</div>
+										<div class="col-md-3">
+											<div class="skill-grid">
+												<div class="circle" id="circles-6"></div>
+												 <h3>C++</h3>
+											 </div>
+										</div>
+										<div class="col-md-3">
+											<div class="skill-grid">
+												<div class="circle" id="circles-7"></div>
+												 <h3>Java</h3>
+											 </div>
+										</div>
+										<div class="col-md-3">
+											<div class="skill-grid">
+												<div class="circle" id="circles-8"></div>
+												 <h3>MySql</h3>
+											 </div>
+										</div>
+										<div class="clearfix"> </div>
+								  </div>
+						   </div>
+					  </div>
+					<!---->
+					 <script type="text/javascript" src="{% static "js/circles.js" %}"></script>
+								 <script>
+									var colors = [
+											['#181115', '#30222A'], ['#181115', '#30222A'], ['#181115', '#30222A'], ['#181115', '#30222A'],['#181115', '#30222A']
+										, ['#181115', '#30222A'], ['#181115', '#30222A'], ['#181115', '#30222A']];
+										var percentages = [75,80,45,40,65,70,60,80]
+									for (var i = 1; i <= 8; i++) {
+										var child = document.getElementById('circles-' + i),
+											// percentage = 50 + (i * 10) / 10;
+											percentage = percentages[i-1];
+										Circles.create({
+											id:         child.id,
+											percentage: percentage,
+											radius:     60,
+											width:      10,
+											number:   	percentage ,
+											text:       '%',
+											colors:     colors[i - 1]
+										});
+									}
+
+					</script>
+
+					<!--/-->
+			 </div>
+		 </div>
+		   <a class="down scroll" href="#port"><span> </span></a>
+	  </div>
+	  </div>
+	 <!------SKILLS Ends--------->
+		 <!------PORTFOLIO Starts--------->
+		 <div id="port" class="Portfolio">
+			  <div class="Portfolio-section text-center">
+			      <h2><span> </span>PROJECTS<span> </span></h2>
+			  </div>
+			  <div class="container">
+				  <div class="portfolio-grids">
+					  <div class="portfolio-grid col-md-4">
+						 <!-- <a href="#"><img src="images/monitr1.png"></a> -->
+						 <a href="https://github.com/Vinay26k/Java"><img src="{% static "images/Java.png" %}"></a>
+						  <p>Demo Banking Application done using both Java and MySql as backend for CRUD operations.
+								Authentication and Authorization, User Validation is the main theme of project.
+								It consists of simple and good UI along with Event Listeners from Java, Database as MySQL.
+							</p>
+						  <a class="rightarrow" href="https://github.com/Vinay26k/Java"><span> </span></a>
+					  </div>
+					  <div class="portfolio-grid col-md-4">
+						  <!-- <a href="#"><img src="images/monitr2.png"></a> -->
+							 <a href="https://github.com/Vinay26k/python"><img src="{% static "images/python-7be70baaac.png" %}"></a>
+						  <p>All my python projects related to <em><a href="https://github.com/Vinay26k/python/tree/master/Projects">Automation of tasks</a></em>.Noticeable projects like<a href="https://github.com/Vinay26k/python/tree/master/Projects">
+								  <em>Web Scraping, TelegramBot,</em></a>
+								<a href="https://github.com/Vinay26k/python/tree/master/Utility%20Projects"><em>TriviaQuiz, search from command</em></a>, <a href="https://github.com/Vinay26k/python/tree/master/Projects"><em>LocateStranger</em></a>
+							Some interesting projects related to <em>Beautiful Soup, Mechanize, Selenium Automation Web technologies</em></p>
+						  <a class="rightarrow" href="https://github.com/Vinay26k/python"><span> </span></a>
+					  </div>
+					  <div class="portfolio-grid col-md-4">
+							<br><br>
+						  <a href="https://github.com/Vinay26k/Django"><img src="{% static "images/740.png" %}"></a>
+						  <p>Django related projects like <a href="https://github.com/Vinay26k/Django/tree/master/BasicForms"><em>RegistrationForms,</em></a>
+							<a href="https://github.com/Vinay26k/Django/tree/master/FirstProject"><em> Database and Administration,</em></a>
+						<a href="https://github.com/Vinay26k/Django/tree/master/LearningTemplates"><em> Template Management and Template tagging,</em></a>
+					<a href="https://github.com/Vinay26k/Django/tree/master/LearningUsers"> User Management, Authentication & Authorization,</a></p>
+						  <a class="rightarrow" href="https://github.com/Vinay26k/Django"><span> </span></a>
+					  </div>
+					  <div class="clear"> </div>
+				  </div>
+				  <a class="portdown scroll" href="#contact"><span> </span></a>
+
+			  </div>
+		 </div>
+  </div>
+  <!------Content Ends-------->
+
+  <!------FOOTER Starts----------->
+  <div  id="contact" class="footer">
+      <div class="container">
+
+		   <div class="contact-section text-center">
+			  <h2><span> </span>CONTACT<span> </span></h2>
+		  </div>
+		 <div class="row">
+
+			 <div class="col-md-6">
+				  <div class="footer-left">
+						<div class="social-icons">
+						   <a href="https://www.linkedin.com/in/vinay26k"><img src="{% static "images/in.png" %}"></a>
+						   <a href="https://twitter.com/vinay26k"><img src="{% static "images/twt.png" %}"></a>
+						   <!-- <a href="#"><img src="images/fb.png"></a> -->
+							 <a href="#"><img src="{% static "images/github-10-xxl.png" %}" height="35" width="42"></a>
+					   </div>
+					   <p>Resume template from W3layouts, customised and deployed this Resume using Django</p>
+				  </div>
+			 </div>
+
+			  <div class="col-md-6">
+				  <div class="footer-right">
+						<!-- Do not change the code! -->
+<a id="foxyform_embed_link_890392" href="http://www.foxyform.com/"></a>
+<script class="form" type="text/javascript">
+(function(d, t){
+   var g = d.createElement(t),
+       s = d.getElementsByTagName(t)[0];
+   g.src = "http://www.foxyform.com/js.php?id=890392&sec_hash=9b6fff7a2b4&width=350px";
+   s.parentNode.insertBefore(g, s);
+}(document, "script"));
+</script>
+
+				 <!-- <div class="form">
+					 <form class="form">
+					 < <form class="form" accept-charset="utf-8" action="http://www.foxyform.com/form.php?id=890392&mail=send&sec_hash=9b6fff7a2b4" method="post" style="width: 100%;" novalidate><input type="hidden" name="d0ce49deade5d96124d112d8ac2ec6618afbdf91" value="9f71bf02f0e09a0ff5cc6cbb895a537879458210399bf9db82324b82eeaa89d7" /> -->
+					 <!-- <input type="text" class="text" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}">
+					 <input type="text" class="text" value="E-mail" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'E-mail';}" required>
+					 <textarea rows="2" cols="70" onfocus="if(this.value == 'Your Message') this.value='';" onblur="if(this.value == '') this.value='Your Message';" required>Your Message</textarea>
+					 <div class="clear"> </div>
+					 <div class="g-recaptcha" data-sitekey="6LfgNfoSAAAAABItyuRsaNmRFAs4peXVJxT0_Cag"></div>
+					 <input type="submit" value="SEND" class="formsubmit">
+				 </form>
+				 </div>
+				  </div>
+				  <div class="clear"></div>
+				  <p class="copy-right">Template by <a href="http://w3layouts.com/">W3layouts</a></p>
+			  </div> -->
+		 </div>
+	 </div>
+	 <a class="up scroll" href="#top-top"><span> </span></a>
+ </div>
+ </body>
+ </html>
